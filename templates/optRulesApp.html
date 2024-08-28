@@ -1,0 +1,42 @@
+<form id="rnp-optionnal-rules">
+    {{log this}}
+
+    <header>
+        <h2>{{object.name}}</h2>
+
+        <div class="actions flexrow">
+            <button
+                id="save-rnp-rules"
+                type="submit"
+            >
+                sauver
+                <i class="fas fa-check"></i>
+            </button>
+            <button id="cancel-rnp-rules">
+                annuler
+                <i class="fas fa-ban"></i>
+            </button>
+            <button id="default-rnp-rules">
+                valeurs par défaut
+                <i class="fas fa-arrow-rotate-left"></i>
+            </button>
+        </div>
+
+        <nav
+            class="sheet-navigation tabs"
+            data-group="primary"
+        >
+            {{#each object.rulesCategories as |cat key| }}
+                <a
+                    class="item active"
+                    data-tab="attributes"
+                >{{cat.name}}</a>
+                {{log cat}}
+            {{/each}}
+        </nav>
+    </header>
+    <section>{{{object.description}}}</section>
+
+
+
+</form>

@@ -1,0 +1,80 @@
+nav#sidebar-tabs {
+    a {
+
+        i {
+            opacity: 0
+        }
+
+        &[data-tab="chat"] {
+            background: center / contain no-repeat url(../assets/icones/Chat.png);
+        }
+
+        &[data-tab="combat"] {
+            background: center / contain no-repeat url(../assets/icones/combats.png);
+        }
+
+        &[data-tab="scenes"] {
+            background: center / contain no-repeat url(../assets/icones/scenes.png);
+        }
+
+        &[data-tab="actors"] {
+            background: center / contain no-repeat url(../assets/icones/actor.png);
+        }
+
+        &[data-tab="items"] {
+            background: center / contain no-repeat url(../assets/icones/items.png);
+        }
+
+        &[data-tab="journal"] {
+            background: center / contain no-repeat url(../assets/icones/journal.png);
+        }
+
+        &[data-tab="tables"] {
+            background: center / contain no-repeat url(../assets/icones/tables.png);
+        }
+
+        &[data-tab="cards"] {
+            background: center / contain no-repeat url(../assets/icones/cartes.png);
+        }
+
+        &[data-tab="playlists"] {
+            background: center / contain no-repeat url(../assets/icones/playlists.png);
+        }
+
+        &[data-tab="compendium"] {
+            background: center / contain no-repeat url(../assets/icones/compendiums.png);
+        }
+
+        &[data-tab="settings"] {
+            background: center / contain no-repeat url(../assets/icones/settings.png);
+        }
+
+        &.collapse i {
+            opacity: 1;
+            color: white
+        }
+
+        &[data-tab] {
+            transition: all 0.2s ease-in-out;
+            filter: grayscale(0.8) drop-shadow(0 0 0px var(--color-text-light-1));
+            box-shadow: none;
+            border: none;
+            border-bottom: 1px solid transparent;
+
+
+            &.active,
+            &:hover {
+                filter: grayscale(0)drop-shadow(0 0 8px var(--color-border-light-primary));
+                transform: scale(1.2);
+                border: none;
+                box-shadow: none;
+                border-bottom: 3px solid var(--color-border-highlight);
+
+            }
+
+            &.active {
+                z-index: +1;
+            }
+        }
+    }
+}

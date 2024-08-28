@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Batman-title";
+    src: url(../assets/font/QPQPGH-TitlingGothicFBComp-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Batman-bold";
+    src: url(../assets/font/QXOKGH-URWDIN-Bold_3.ttf);
+}
+
+@font-face {
+    font-family: "Batman-italic";
+    src: url(../assets/font/OUPYEL-URWDIN-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Batman-bold-italic";
+    src: url(../assets/font/TECCWB-URWDIN-BoldItalic_3.ttf);
+}
+
+@font-face {
+    font-family: "Batman-regular";
+    src: url(../assets/font/WGQUMV-URWDIN-Regular_2.ttf);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Batman-title";
+    text-transform: uppercase;
+}
+
+h4,
+h5,
+h6 {
+    font-family: "Batman-bold";
+}
+
+i,
+a,
+em {
+    font-family: "Batman-italic";
+}
+
+b,
+strong {
+    font-family: "Batman-bold";
+}
+
+u {
+    font-family: "Batman-bold-italic";
+}
+
+body {
+    font-family: "Batman-regular";
+}

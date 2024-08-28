@@ -1,0 +1,38 @@
+{
+  "id": "csb-batman-style",
+  "title": "batman-gotham city chronicles design ",
+  "description": "batman-gotham city chronicles for custom system builder ",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12",
+    "maximum": "12"
+  },
+  "authors": [
+    {
+      "name": "Rwan",
+      "discord": "rwanoux"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "custom-system-builder",
+        "type": "system",
+        "compatibility": {
+          "minimum": "3.0.0",
+          "verified": "3.0.2"
+        }
+      }
+    ]
+  },
+  "conflicts": [],
+  "esmodules": [
+    "/scripts/module.js"
+  ],
+  "styles": [
+    "/css/csb-batman.css"
+  ],
+  "socket": true,
+  "media": []
+}

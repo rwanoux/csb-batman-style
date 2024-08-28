@@ -1,0 +1,89 @@
+div.window-app.sheet {
+    .window-content {
+        padding: 0;
+
+        header {
+            background-image: url(../assets/img/fond_noir.webp);
+            background-size: 100% auto;
+            background-position: bottom;
+            color: var(--color-text-light-1);
+
+            input[type="text"],
+            input[type="number"],
+            select,
+            option {
+                color: var(--color-text-light-1);
+            }
+        }
+
+        .custom-system-actor {
+            margin: 0;
+        }
+
+        .custom-system-actor-content {
+            padding: 0;
+        }
+
+        background-image: url(../assets/img/fond_police.webp);
+        background-size: auto 130%;
+        background-position: center;
+
+        .custom-system-editable-panel-title {
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            background-color: #000000;
+            color: white;
+        }
+
+        h1.charname input,
+        h1.itemname input {
+            text-transform: uppercase;
+            background: var(--color-text-dark-3);
+            color: var(--color-text-light-1);
+        }
+
+        .custom-system-label-root {
+
+            padding: 0 0.3rem;
+            color: var(--color-text-light-1);
+            background-color: var(--color-text-dark-6);
+        }
+
+        table {
+            border-top: var(--color-text-dark-6) 2px solid;
+            border-bottom: var(--color-text-dark-6) 2px solid;
+            box-shadow: 0px 0px 8px #00000044, 0px 0px 35px #ffffff inset;
+        }
+
+
+
+
+    }
+
+    &.actor {
+        div.profile-img-container {
+            border: none;
+            transform: rotate(-5deg);
+            box-shadow: 0px 0 6px black;
+
+            &::after {
+                pointer-events: none;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-image: url(../assets/img/photo_id.webp);
+                background-size: auto 120%;
+                background-position: center;
+            }
+        }
+    }
+
+    &:not(.actor) .window-content {
+        background-image: url(../assets/img/fond_gris.webp);
+        background-size: auto 130%;
+        background-position: center;
+
+    }
+}
