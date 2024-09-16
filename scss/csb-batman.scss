@@ -21,6 +21,15 @@ body img#logo {
     header.window-header {
         background: url(../assets/img/fond_noir.webp);
 
+        .window-title,
+        .header-button {
+            font-family: 'Batman-window-header';
+            font-size: larger;
+
+        }
+
+
+
     }
 
     .window-content {
@@ -147,5 +156,20 @@ div.app.window-app.journal-sheet {
     &.journal-entry-page {
         background: url(../assets/img/fond_gris.webp);
 
+    }
+}
+
+form.placeable-hud .control-icon {
+    opacity: 1;
+
+    *,
+    input[type="text"] {
+        color: white;
+        opacity: 1
+    }
+
+    &.active,
+    &:hover {
+        box-shadow: 0px 0px 5px 4px var(--color-border-light-primary)
     }
 }

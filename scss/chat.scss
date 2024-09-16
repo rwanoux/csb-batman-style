@@ -7,20 +7,31 @@ ol#chat-log {
         .message-header {
 
             background: url(../assets/img/fond_gris.webp);
+            font-family: 'Batman-title';
 
-            .message-metadata {
-                box-shadow: 0px 0px 6px black inset;
-                color: var(--color-text-light-1)
+            h4 {
+                font-family: 'Batman-title';
+
             }
+
+
         }
 
         .message-content {
+            padding: 0.5rem;
+            background-color: rgba(95, 84, 84, 0.219);
+
             p {
-                background-color: var(--color-text-light-1);
-                color: black;
+                background-color: rgba(177, 158, 158, 0.219);
+                padding: 0.2rem 0.5rem;
+
             }
 
             span.custom-system-roll {
+                color: var(--color-text-dark-1);
+            }
+
+            .dice-tooltip {
                 color: var(--color-text-dark-1);
             }
         }

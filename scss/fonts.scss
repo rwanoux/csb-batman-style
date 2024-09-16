@@ -1,26 +1,31 @@
 @font-face {
     font-family: "Batman-title";
-    src: url(../assets/font/QPQPGH-TitlingGothicFBComp-Medium.ttf);
+    src: url(../assets/font/titles/TitlingGothicFBComp-Medium.ttf);
 }
 
 @font-face {
     font-family: "Batman-bold";
-    src: url(../assets/font/QXOKGH-URWDIN-Bold_3.ttf);
+    src: url(../assets/font/inline/URWDIN-Bold.eot);
 }
 
 @font-face {
     font-family: "Batman-italic";
-    src: url(../assets/font/OUPYEL-URWDIN-Italic.ttf);
+    src: url(../assets/font/inline/URWDIN-Italic.ttf);
 }
 
 @font-face {
     font-family: "Batman-bold-italic";
-    src: url(../assets/font/TECCWB-URWDIN-BoldItalic_3.ttf);
+    src: url(../assets/font/inline/URWDIN-BoldItalic.ttf);
 }
 
 @font-face {
     font-family: "Batman-regular";
-    src: url(../assets/font/WGQUMV-URWDIN-Regular_2.ttf);
+    src: url(../assets/font/inline/URWDIN-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Batman-window-header";
+    src: url(../assets/font/window_header/MysticalType\ -\ Nata-Heavy.otf);
 }
 
 h1,

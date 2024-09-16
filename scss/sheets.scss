@@ -43,33 +43,50 @@ div.window-app.sheet {
             color: var(--color-text-light-1);
         }
 
-        .custom-system-label-root {
+        header b.custom-system-label-root {
+            background-color: transparent;
+
+        }
+
+        b.custom-system-label-root {
 
             padding: 0 0.3rem;
             color: var(--color-text-light-1);
-            background-color: var(--color-text-dark-6);
+            background-color: black;
         }
 
         table {
-            border-top: var(--color-text-dark-6) 2px solid;
-            border-bottom: var(--color-text-dark-6) 2px solid;
+            border: var(--color-text-dark-6) 2px solid;
             box-shadow: 0px 0px 8px #00000044, 0px 0px 35px #ffffff inset;
+
+            tbody {
+                tr:has(.custom-system-cell-boldTitle) {
+                    &:nth-child(1) {
+                        background-color: #000000;
+                        color: white;
+                    }
+                }
+            }
         }
 
+        .custom-system-rollable {
+            color: var(--color-border-light-tertiary);
+        }
 
 
 
     }
 
+
     &.actor {
         div.profile-img-container {
             border: none;
-            transform: rotate(-5deg);
+            transform: rotate(-5deg) scale(0.8) translateX(10px);
             box-shadow: 0px 0 6px black;
 
             &::after {
                 pointer-events: none;
-                content: "";
+                content: " ";
                 position: absolute;
                 width: 100%;
                 height: 100%;
