@@ -23,7 +23,7 @@ body img#logo {
 
         .window-title,
         .header-button {
-            font-family: 'Batman-window-header';
+            font-family: 'Batman-regular';
             font-size: larger;
 
         }
@@ -42,8 +42,9 @@ body img#logo {
 }
 
 figure#pause {
+
     figcaption {
-        content: "tout est calme à Gotham"
+        content: "Tout semble calme à Gotham City"
     }
 }
 
@@ -172,4 +173,10 @@ form.placeable-hud .control-icon {
     &:hover {
         box-shadow: 0px 0px 5px 4px var(--color-border-light-primary)
     }
+}
+
+div.app.sheet.item .profile-img-container img {
+    aspect-ratio: 1/1;
+
+
 }

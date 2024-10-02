@@ -12,5 +12,5 @@ Hooks.on('renderPause', () => {
    imgPause.style.top = "-5rem"
    imgPause.style.opacity = "1"
 
-   pause.querySelector("figcaption").innerHTML = "tout est calme à Gotham"
+   pause.querySelector("figcaption").innerHTML = "Tout semble calme à Gotham City"
 })
